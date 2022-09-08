@@ -507,7 +507,7 @@
 <img src="/2022/09/08/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/image-20220908160501859.png" class="" title="image-20220908160501859">
 
 <h3 id="4-使用Dockerfile文件，创建镜像"><a href="#4-使用Dockerfile文件，创建镜像" class="headerlink" title="4. 使用Dockerfile文件，创建镜像"></a>4. 使用Dockerfile文件，创建镜像</h3><p>在dockerfile同一目录下执行如下命令：</p>
-<pre><code>docker build -t xmqaq/xmctf_exec_2022 .
+<pre><code> docker build -t xmqaq/xmctf_exec_2022 .
 </code></pre>
 <img src="/2022/09/08/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/image-20220908160522791.png" class="" title="image-20220908160522791">
 
@@ -579,7 +579,7 @@
 <img src="/2022/09/08/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3/image-20220908160809393.png" class="" title="image-20220908160809393">
 
 <p>从上图可以看到当前运行容器的id，我们使用<code>docker stop</code>停止该容器</p>
-<img src="Docker常用命令详解/image-20220908160819341.png" alt="image-20220908160819341" style="zoom:67%;" />
+<img src="Docker常用命令详解/image-20220908160819341.png" />
 
 <p>这里容器只需输入前三位即可，不需补全</p>
 <p>然后使用<code>docker rm 84e</code>命令删除容器即可</p>
@@ -587,13 +587,13 @@
 <p>第一种:</p>
 <pre class=" language-bash"><code class="language-bash">docker inspect --format<span class="token operator">=</span><span class="token string">'&amp;#123;&amp;#123;.NetworkSettings.IPAddress&amp;#125;&amp;#125;'</span> 容器名称
 </code></pre>
-<img src="Docker常用命令详解/image-20220908160832292.png" alt="image-20220908160832292" style="zoom:67%;" />
+<img src="Docker常用命令详解/image-20220908160832292.png"  />
 
 <p>上图查看的是容器名为xxe的ip地址</p>
 <p>第二种：</p>
 <pre class=" language-bash"><code class="language-bash">docker inspect 容器名称 <span class="token operator">|</span><span class="token function">grep</span> IPAddress
 </code></pre>
-<img src="Docker常用命令详解/image-20220908160844279.png" alt="image-20220908160844279" style="zoom:67%;" />
+<img src="Docker常用命令详解/image-20220908160844279.png" />
 
                 
             </div>
